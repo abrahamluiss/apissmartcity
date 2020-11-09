@@ -4,11 +4,27 @@
 
 ![](https://img.shields.io/bower/v/editor.md.svg)
 
+**Conseguir token**
+
+```
+{
+"token" : "",
+"placa_photo" : ""
+}
+```
+![](http://somosuconti.com/images/conseguirtoken.png)
+
 
 **Subir imagen**
 > Enviar imagenes, convertir a base64
 > Archivo api/driver/photodriver
 
+```
+{
+"token" : "",
+"placa_photo" : ""
+}
+```
 ![](http://somosuconti.com/images/enviarimgabase64.png)
 
 
