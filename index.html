@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SmartCity</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="particles-js"></div>
+	
+	<header class="principal contenedor">
+		<div class="menu">
+			<div class="contenedor">
+				<div class="logo">SmartCityHyo - Apis</div>
+				<nav>
+					<ul>
+						<li><a href="#">Inicio</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+
+		
+	<div class="principal contenedor">
+        <div class="texto">
+            <h2>Documentación de apis</h2>
+            <h3>Proyecto realizado por los alumnos de la universidad continental</h3>
+
+		</div>
+		<article>
+            <h2 class="titulo">Auth</h2>
+
+               <code>
+                POST(login - user) /smarcityHyo/api/auth/login
+                <br>
+                {
+                    <br>
+                    "usuario" :"", 
+                    <br>
+                    "password": ""
+                    <br>
+                 }
+             
+             </code>
+             
+             <code>
+                POST(signup - user) /smarcityHyo/api/auth/signup
+                <br>
+                {
+                    <br>
+                    "nombres" : "",
+                    <br>
+                    "apellidos" : "",
+                    <br>
+                    "correo" : "@hotmail.com",
+                    <br>
+                    "password" : "",
+                    <br>
+                    "telefono" : "",
+                    <br>
+                    "tipo" : "",
+                    <br>
+                    "estado" : "Activo"
+                    <br>
+                }
+             
+             </code>
+             <code>
+                POST(signup - driver) /smarcityhyo/api/auth/signupdriver
+                <br>
+                {
+                    <br>
+                    "nombres": "conductor3 nombre",
+                    <br>
+                    "apellidos": "conductor3 apellidos",
+                    <br>
+                    "telefono": "12345701",
+                    <br>
+                    "correo": "conductor03@gmail.com",
+                    <br>
+                    "password": "Conductor123$",
+                    <br>
+                    "empresaId": "2"
+                    <br>
+                }
+             
+             </code>
+
+             <code>
+                POST(login - driver) /smarcityhyo/api/auth/logindriver
+                <br>
+                {
+                    <br>
+                    "usuario": "",
+                    <br>
+                   &nbsp; "password" : ""
+                    <br>
+                }
+             
+             </code>
+
+
+        </article>
+
+		<article>
+            <h2 class="titulo">Users</h2>
+
+               <code>
+                GET(user) /smarcityHyo/api/users/profile
+                <br>
+                {
+                    <br>
+                    &nbsp;//Por headers
+                    <br>
+                   &nbsp; key : token
+                    <br>
+                    &nbsp;value: valortoken
+    
+                    <br>
+                 }
+             
+             </code>
+   
+
+
+		</article>
+
+		<article>
+			<h2 class="titulo">Autores</h2>
+			<p class="fecha">01 de Noviembre de 2020</p>
+			<p>■ Aliaga Pamela.<br>■ Mauro Galvez Terreros.<br>■ Abraham Saldaña Espinoza.</p>		
+
+		</article>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="particles.min.js"></script>
+	<script src="particulas.js"></script>
+</body>
+</html>
