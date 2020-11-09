@@ -8,8 +8,8 @@
 
 ```
 {
-"token" : "",
-"placa_photo" : ""
+"usuario" : "",
+"password" : ""
 }
 ```
 ![](http://somosuconti.com/images/conseguirtoken.png)
