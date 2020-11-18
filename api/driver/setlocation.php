@@ -1,15 +1,16 @@
 <?php
-require_once '../../classes/auth.class.php';
 require_once '../../classes/respuestas.class.php';
-$_auth = new auth;
+require_once '../../classes/setlocation.class.php';
+
 $_respuestas = new respuestas;
+$_setlocation = new setlocation;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     //recibir datos
     $postBody = file_get_contents("php://input");
     //enviamos datos al manejador
     //print_r($postBody);
-    $datosArray = $_auth->login($postBody);
+    $datosArray = $_setlocation->postMetod($postBody);
     //devolvemos una respuesta
     header('Content-Type: application/json');
     if (isset($datosArray["result"]["error_id"])) {
